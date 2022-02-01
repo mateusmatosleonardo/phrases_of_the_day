@@ -9,9 +9,11 @@ void main() {
       child: Column(
         children: const [
           ElevatedButton(
-              onPressed: () {},
+              onPressed: () {
+                print("Botão pressionado!");
+              },
               child: Text(
-                "Pressione aqui",
+                "Clique aqui",
                 style: TextStyle(
                     fontSize: 15,
                     fontWeight: FontWeight.normal,
