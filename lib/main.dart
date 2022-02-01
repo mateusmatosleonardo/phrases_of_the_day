@@ -8,7 +8,19 @@ void main() {
       color: Colors.white,
       child: Column(
         children: const [
-          Text("Lorem ipsum dolor sit amet, consectetur adipiscing elit.")
+          Text(
+            "Lorem ipsum",
+            style: TextStyle(
+                decoration: TextDecoration.underline,
+                decorationColor: Colors.black,
+                decorationStyle: TextDecorationStyle.solid,
+                letterSpacing: 0,
+                wordSpacing: 0,
+                fontSize: 35,
+                fontStyle: FontStyle.normal,
+                fontWeight: FontWeight.normal,
+                color: Colors.black),
+          )
         ],
       ),
     ),
