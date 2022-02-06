@@ -23,9 +23,13 @@ class _HomeState extends State<Home> {
       ),
       body: Container(
         padding: const EdgeInsets.all(16),
-        decoration:
-            BoxDecoration(border: Border.all(width: 3, color: Colors.amber)),
+        // width 100%
+        width: double.infinity,
+        // decoration:
+        //     BoxDecoration(border: Border.all(width: 3, color: Colors.amber)),
         child: Column(
+          mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+          crossAxisAlignment: CrossAxisAlignment.center,
           children: [
             Image.asset("images/logo.png"),
             const Text(
