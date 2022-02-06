@@ -1,27 +1,20 @@
 import 'package:flutter/material.dart';
 
 void main() {
-  // função para executar o app
   runApp(MaterialApp(
-    title: "Frases do dia",
-    home: Container(
-      color: Colors.white,
-      child: Column(
-        children: const [
-          ElevatedButton(
-              onPressed: () {
-                print("Botão pressionado!");
-              },
-              child: Text(
-                "Clique aqui",
-                style: TextStyle(
-                    fontSize: 15,
-                    fontWeight: FontWeight.normal,
-                    color: Colors.black),
-              ))
-        ],
-      ),
-    ),
-    // home: estrutura inicial do App
+    home: Home(),
   ));
+}
+
+// ignore: use_key_in_widget_constructors
+class Home extends StatefulWidget {
+  @override
+  _HomeState createState() => _HomeState();
+}
+
+class _HomeState extends State<Home> {
+  @override
+  Widget build(BuildContext context) {
+    return Container();
+  }
 }
