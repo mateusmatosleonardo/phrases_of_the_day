@@ -21,7 +21,14 @@ class _HomeState extends State<Home> {
         title: Text("Frases do dia"),
         backgroundColor: Colors.green,
       ),
-      body: Container(),
+      body: Container(
+        padding: EdgeInsets.all(16),
+        decoration:
+            BoxDecoration(border: Border.all(width: 3, color: Colors.amber)),
+        child: Column(
+          children: [Image.asset("images/logo.png")],
+        ),
+      ),
     );
   }
 }
