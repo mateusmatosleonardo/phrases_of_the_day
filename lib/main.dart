@@ -24,10 +24,14 @@ class _HomeState extends State<Home> {
     "Frase 6",
   ];
 
-  final _phrasesGeneration = "Clique abaixo para gerar uma nova frase";
+  var _phrasesGeneration = "Clique abaixo para gerar uma nova frase";
 
   void generationPhrases() {
     var numberRandom = Random().nextInt(phrases.length);
+
+    setState(() {
+      _phrasesGeneration = phrases[numberRandom];
+    });
   }
 
   @override
@@ -64,7 +68,7 @@ class _HomeState extends State<Home> {
                     color: Colors.white,
                     fontWeight: FontWeight.bold),
               ),
-              onPressed: () {},
+              onPressed: generationPhrases,
             )
           ],
         ),
