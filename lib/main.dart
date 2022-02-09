@@ -15,22 +15,23 @@ class Home extends StatefulWidget {
 }
 
 class _HomeState extends State<Home> {
+  // terminar as frases e estudar a lógica do app novamente
   var phrases = [
-    "Pequenas atitudes fazem a diferença",
-    "Frase 2",
+    "Pequenas atitudes fazem a diferença.",
+    "O resultado do programa é relativo o nível de conhecimento do programador.",
     "Frase 3",
     "Frase 4",
     "Frase 5",
     "Frase 6",
   ];
 
-  var _phrasesGeneration = "Clique abaixo para gerar uma nova frase";
+  var generatedPharese = "Clique abaixo para gerar uma nova frase";
 
   void generationPhrases() {
     var numberRandom = Random().nextInt(phrases.length);
 
     setState(() {
-      _phrasesGeneration = phrases[numberRandom];
+      generatedPharese = phrases[numberRandom];
     });
   }
 
@@ -53,7 +54,7 @@ class _HomeState extends State<Home> {
           children: [
             Image.asset("images/logo.png"),
             Text(
-              _phrasesGeneration,
+              generatedPharese,
               textAlign: TextAlign.justify,
               style: const TextStyle(
                   fontSize: 17,
