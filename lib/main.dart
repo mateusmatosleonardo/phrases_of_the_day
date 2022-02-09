@@ -16,7 +16,7 @@ class Home extends StatefulWidget {
 
 class _HomeState extends State<Home> {
   var phrases = [
-    "Frase 1",
+    "Pequenas atitudes fazem a diferença",
     "Frase 2",
     "Frase 3",
     "Frase 4",
@@ -55,7 +55,7 @@ class _HomeState extends State<Home> {
             Text(
               _phrasesGeneration,
               textAlign: TextAlign.justify,
-              style: TextStyle(
+              style: const TextStyle(
                   fontSize: 17,
                   fontStyle: FontStyle.italic,
                   color: Colors.black),
