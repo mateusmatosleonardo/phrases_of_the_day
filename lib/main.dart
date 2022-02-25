@@ -19,10 +19,9 @@ class _HomeState extends State<Home> {
   var phrases = [
     "Pequenas atitudes fazem a diferença.",
     "O resultado do programa é relativo o nível de conhecimento do programador.",
-    "Frase 3",
-    "Frase 4",
-    "Frase 5",
-    "Frase 6",
+    "Só existe um êxito: a capacidade de levar a vida que se quer.",
+    "A vitalidade é demonstrada não apenas pela persistência, mas pela capacidade de começar de novo.",
+    "A coragem não é ausência do medo; é a persistência apesar do medo.",
   ];
 
   var generatedPharese = "Clique abaixo para gerar uma nova frase";
